@@ -1,0 +1,30 @@
+.navbar{
+    height: 70px;
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient(to right, rgb(55, 55, 248),rgb(255, 59, 92));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.navLogin{
+    background-color: white;
+    color: rgb(234, 66, 94);
+    padding: 5px;
+    border-radius: 10px;
+    /* height: 40px; */
+    width: auto;
+    border: 0;
+}
+.fa-lock{
+    color: white;
+}
+.logo{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
