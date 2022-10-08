@@ -9,8 +9,8 @@ const LoginForm = (props) => {
       'username': userName,
       'password': password
     }
-    // localStorage.setItem("userDetails", JSON.stringify(data))
-    props.setData(data)
+    localStorage.setItem("userDetails", JSON.stringify(data))
+    props.setData(JSON.parse(localStorage.getItem("userDetails")))
   }
   return (
     <div className='main-cont'>

@@ -5,14 +5,13 @@ import LoginForm from './components/LoginForm';
 import WelcomePage from './components/WelcomePage';
 
 function App() {
-const [profileName, setProfileName] = useState("Login")
-const [data, setData]=useState("")
+let user = JSON.parse(localStorage.getItem("userDetails")) || null
+const [data, setData]=useState(user)
 
-// let data = JSON.parse(localStorage.getItem("userDetails")) || null
   return (
     <div className="App">
       <Navbar data={data}/>
-      {!data?<LoginForm setData={setData}/>:<WelcomePage setData={setData} transferData={data}/>}
+      {!data?<LoginForm setData={setData}/>:<WelcomePage setData={setData}/>}
     </div>
   );
 }
